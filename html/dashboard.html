@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/Layout.css" />
+    <link rel="stylesheet" href="../css/Dashboard.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__title">
+        <img src="../img/logo_ipn.jpg" alt="logo IPN" />
+        <div class="header__text">
+          <h3>Instituto Politécnico Nacional</h3>
+          <span>"La técnica al servicio de la patria"</span>
+        </div>
+      </div>
+      <div class="header__panel">
+        <i class="fas fa-bell header__panel--bell"></i>
+        <div class="panel__user">
+          <span class="panel__user--avatar">
+            <i class="fas fa-user"></i>
+          </span>
+          <span class="panel__user--name"
+            >John Doe<i class="fas fa-angle-down"></i
+          ></span>
+        </div>
+      </div>
+    </header>
+    <aside class="aside">
+      <nav class="aside__nav">
+        <ul class="aside__navbar">
+          <li>
+            <a href=""><i class="fas fa-arrow-left"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-home"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-users"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-list-alt"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-cog"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <section class="main">
+      <div class="productTable">
+        <div class="productTable__header">
+          <h2>Productividad</h2>
+          <a href="" class="btn"><i class="fas fa-plus"></i>Agregar producto</a>
+        </div>
+        <nav class="productTable__navbar">
+          <ul class="productTable__nav">
+            <li class="productTable__nav--item">
+              <a href="">Todo<span>100</span></a>
+            </li>
+            <li class="productTable__nav--item">
+              <a href="">Articulos<span>25</span></a>
+            </li>
+            <li class="productTable__nav--item">
+              <a href="">Libros<span>25</span></a>
+            </li>
+            <li class="productTable__nav--item">
+              <a href="">Desarrollo<span>50</span></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="ListProduct">
+          <article class="product__article">
+            <div class="product__article--header">
+              <h3 class="product__title">La paralisis de sueño</h3>
+              <div>
+                <i class="fas fa-trash-alt"></i>
+                <i class="fas fa-pen"></i>
+              </div>
+            </div>
+            <div class="product__details">
+              <ul class="product__details--list">
+                <li class="details__principal">
+                  <i class="fas fa-users"></i>Congreso de Viena
+                </li>
+                <li class="details__principal">
+                  <i class="fas fa-calendar-alt"></i>04/04/1998
+                </li>
+                <li class="details__principal">
+                  <i class="fas fa-user-edit"></i>Principal
+                </li>
+                <li class="details__principal">
+                  <i class="fas fa-globe"></i>Link del sitio
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="product__article">
+            <div class="product__article--header">
+              <h3 class="product__title">La paralisis de sueño</h3>
+              <div>
+                <i class="fas fa-trash-alt"></i>
+                <i class="fas fa-pen"></i>
+              </div>
+            </div>
+            <div class="product__details">
+              <ul class="product__details--list">
+                <li class="details__principal">
+                  <i class="fas fa-globe"></i>
+                  <ul class="product__details--book">
+                    <li>Nombre de la revista</li>
+                    <li>Tipo de revista</li>
+                    <li>Indice</li>
+                    <li>ISSN</li>
+                    <li>DOI del articulo</li>
+                  </ul>
+                </li>
+                <li class="details__principal">
+                  <i class="fas fa-calendar-alt"></i>04/04/1998
+                </li>
+                <li class="details__principal">
+                  <i class="fas fa-user-edit"></i>Principal
+                </li>
+                <li class="details__principal">
+                  <i class="fas fa-globe"></i>Link del sitio
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="product__article">
+            <div class="product__article--header">
+              <h3 class="product__title">Titulo del capitulo</h3>
+              <div>
+                <i class="fas fa-trash-alt"></i>
+                <i class="fas fa-pen"></i>
+              </div>
+            </div>
+            <div class="product__details">
+              <ul>
+                <li class="details__principal">
+                  <ul>
+                    <li>Titulo del libro</li>
+                    <li>Limusa</li>
+                    <li>2da Edicion</li>
+                    <li>Conacyt</li>
+                    <li>ISBN</li>
+                  </ul>
+                </li>
+                <li class="details__principal">
+                  <i class="fas fa-calendar-alt"></i>04/04/1998
+                </li>
+                <li class="details__principal">
+                  <i class="fas fa-globe"></i>Link del sitio
+                </li>
+                <li class="details__principal">
+                  <i class="fas fa-user-edit"></i>Principal
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="product__article">
+            <div class="product__article--header">
+              <h3 class="product__title">Titulo del Libro</h3>
+              <div>
+                <i class="fas fa-trash-alt"></i>
+                <i class="fas fa-pen"></i>
+              </div>
+            </div>
+            <div class="product__details">
+              <ul>
+                <li>
+                  <ul>
+                    <li>Limusa</li>
+                    <li>2da Edicion</li>
+                    <li>Conacyt</li>
+                    <li>ISBN</li>
+                  </ul>
+                </li>
+                <li><i class="fas fa-calendar-alt"></i>04/04/1998</li>
+                <li><i class="fas fa-user-edit"></i>Principal</li>
+                <li><i class="fas fa-globe"></i>Link del sitio</li>
+              </ul>
+            </div>
+          </article>
+          <article class="product__article">
+            <div class="product__article--header">
+              <h3 class="product__title">Titulo del Software o Hardware</h3>
+              <div>
+                <i class="fas fa-trash-alt"></i>
+                <i class="fas fa-pen"></i>
+              </div>
+            </div>
+            <div class="product__details">
+              <p class="product__details--description">
+                Descrición del producto
+              </p>
+              <ul>
+                <li><i class="fas fa-calendar-alt"></i>04/04/1998</li>
+                <li><i class="fas fa-user-edit"></i>Principal</li>
+                <li><i class="fas fa-globe"></i>Link del sitio</li>
+                <li><i class="far fa-copyright"></i>MIT</li>
+              </ul>
+            </div>
+          </article>
+          <article class="product__article">
+            <div class="product__article--header">
+              <h3 class="product__title">Titulo del Software o Hardware</h3>
+              <div>
+                <i class="fas fa-trash-alt"></i>
+                <i class="fas fa-pen"></i>
+              </div>
+            </div>
+            <div class="product__details">
+              <p class="product__details--description">
+                Descrición del producto
+              </p>
+              <ul>
+                <li><i class="fas fa-calendar-alt"></i>04/04/1998</li>
+                <li><i class="fas fa-user-edit"></i>Principal</li>
+                <li><i class="fas fa-globe"></i>Link del sitio</li>
+                <li><i class="far fa-copyright"></i>MIT</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <footer class="footer"></footer>
+  </body>
+</html>
