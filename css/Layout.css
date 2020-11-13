@@ -533,11 +533,16 @@ border-bottom: 1px solid #727272;
 }
 
 .buttons{
-  display: flex;
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+  row-gap: 0.5em;
   align-items: center;
   justify-content: center;
-  width: 300px;
-  height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 20px 10px 10px;
+  width: 320px;
+  height: 225px;
   border-radius: 10px;
   font-size: 2rem;
   font-weight: bold;
@@ -549,6 +554,11 @@ border-bottom: 1px solid #727272;
 
 .buttons:hover{
   background: var(--pinkArticles);
+}
+
+.buttons img{
+  display:block;
+  margin:auto;
 }
 /*¨----------------------------*/
 
