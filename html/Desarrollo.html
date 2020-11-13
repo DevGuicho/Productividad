@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/Layout.css" />
+    <link rel="stylesheet" href="../css/Dashboard.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>Desarrollo</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__title">
+        <img src="../img/logo_ipn.jpg" alt="logo IPN" />
+        <div class="header__text">
+          <h3>Instituto Politécnico Nacional</h3>
+          <span>"La técnica al servicio de la patria"</span>
+        </div>
+      </div>
+      <div class="header__panel">
+        <i class="fas fa-bell header__panel--bell"></i>
+        <div class="panel__user">
+          <span class="panel__user--avatar">
+            <i class="fas fa-user"></i>
+          </span>
+          <span class="panel__user--name"
+            >John Doe<i class="fas fa-angle-down"></i
+          ></span>
+        </div>
+      </div>
+    </header>
+    <aside class="aside">
+      <nav class="aside__nav">
+        <ul class="aside__navbar">
+          <li>
+            <a href=""><i class="fas fa-arrow-left"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-home"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-users"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-list-alt"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-cog"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <section class="main">
+      <div class="productTable">
+        <div class="productTable__header__AC">
+          <div class="productTable__header_AC--text">
+            <h2>Desarrollo de Software o Hardware</h2>
+            <p>Por favor llene el siguiente formulario para agregar un Desarrollo</p>
+          </div>
+          <a href="" class="btn"><i class="fas fa-save"></i>Guardar Producto</a>
+        </div>
+        <form>
+          <div class="formulario">
+            <!-- Grupo: Titulo del Desarrollo -->
+            <div class="form__group p1" id="titleDevp">
+              <label for="titleDevp" class="form__label">Titulo del Desarrollo</label>
+              <div class="form__group--input">
+                <input type="text" id="titleDevp" class="form__input"/>
+                <i class="formulario__validacion--estado fas fa-times-circle"></i>
+              </div>
+              <p class="formulario__input--error">
+                *Por favor llene este campo con formato valido
+              </p>
+            </div>
+            <!-- Grupo: URL-->
+            <div class="form__group p1" id="urlDevp">
+              <label for="urlDevp" class="form__label">URL</label>
+              <div class="form__group--input">
+                <input type="text" id="urlDevp" class="form__input"/>
+                <i class="formulario__validacion--estado fas fa-times-circle"></i>
+              </div>
+              <p class="formulario__input--error">
+                *Por favor llene este campo con formato valido
+              </p>
+            </div>
+
+             <!-- Grupo: Año de Desarrollo -->
+             <div class="form__group p1" id="yearDevp">
+              <label for="yearDevp" class="form__label">Año de Desarrollo</label>
+              <div class="form__group--input">
+                <input type="number" id="yearDevp" class="form__input"/>
+                <i class="formulario__validacion--estado fas fa-times-circle"></i>
+              </div>
+              <p class="formulario__input--error">
+                *Por favor llene este campo con formato valido
+              </p>
+            </div>
+            <!-- Grupo: Tipo de Autor-->
+            <div class="form__group p1" id="typeDevp">
+              <label for="typeDevp" class="form__label">Tipo de Autor</label>
+              <div class="form__group--input">
+                <select id="typeDevp" class="form__input">
+                  <option value="AtypeDevp">Principal</option>
+                  <option value="BtypeDevp">Coautor</option>
+                </select>
+                <i class="formulario__validacion--estado fas fa-times-circle"></i>
+              </div>
+            </div>
+            <!-- Grupo: Licencia-->
+            <div class="form__group p1" id="licencia">
+              <label for="licencia" class="form__label">Tipo de Autor</label>
+              <div class="form__group--input">
+                <select id="licencia" class="form__input">
+                  <option value="Alicencia">Opcion A</option>
+                  <option value="Blicencia">Opcion B</option>
+                </select>
+                <i class="formulario__validacion--estado fas fa-times-circle"></i>
+              </div>
+            </div>
+
+            <!-- Grupo: ¿Esta relacionado con su Tesis?-->
+            <div class="form__group p1" id="relateDevp">
+              <label for="relateDevp" class="form__label">¿Esta relacionado con su Tesis?</label>
+              <div class="form__group--input">
+                <select id="relateDevp" class="form__input">
+                  <option value="ArelateDevp">Si</option>
+                  <option value="BrelateDevp">No</option>
+                </select>
+                <i class="formulario__validacion--estado fas fa-times-circle"></i>
+              </div>
+            </div>
+        </div>
+        
+
+      </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <img
+        src="../img/logo_ipn.jpg"
+        alt="logo IPN"
+        class="footer__img--ipn"
+      />
+      <div class="footer__text">
+        <p class="footer__text--title">
+          Instituto Politécnico Nacional <br />
+          Centro de Investigación en Ciencia Aplicada y Tecnología Avanzada
+          Unidad Legaria
+        </p>
+        <p class="footer__text--direction">
+          Calzada Legaria 694, Colonia Irrigación, Alcaldía Miguel Hidalgo,
+          <br />
+          C.P 11500 Ciudad de México, CDMX Conmutador: 55 57 29 60 00.
+        </p>
+      </div>
+      <img
+        src="../img/Logo_CICATA.png"
+        alt="Logo CICATA"
+        class="footer__img--cigata"
+      />
+    </footer>
+  </body>
+  </html>
