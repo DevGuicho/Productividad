@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/Layout.css" />
+    <title>MagazineArticle</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__title">
+        <img src="../img/logo_ipn.jpg" alt="logo IPN" />
+        <div class="header__text">
+          <h3>Instituto Politécnico Nacional (IPN)</h3>
+          <span>"La técnica al servicio de la patria"</span>
+        </div>
+      </div>
+      <div class="header__panel">
+        <i class="fas fa-bell header__panel--bell"></i>
+        <div class="panel__user">
+          <span class="panel__user--avatar">
+            <i class="fas fa-user"></i>
+          </span>
+          <span class="panel__user--name"
+            >John Doe<i class="fas fa-angle-down"></i
+          ></span>
+        </div>
+      </div>
+    </header>
+    <aside class="aside">
+      <nav class="aside__nav">
+        <ul class="aside__navbar">
+          <li>
+            <a href=""><i class="fas fa-arrow-left"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-home"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-users"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-list-alt"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-cog"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <section class="main">
+      <div class="productTable">
+        <div class="productTable__header__AC">
+          <div class="productTable__header_AC--text">
+            <h2>Articulo en Revista</h2>
+            <p>Por favor llene el siguiente formulario para agregar un Articulo de Revista</p>
+          </div>
+          <a href="" class="btn"><i class="fas fa-save"></i>Guardar Producto</a>
+        </div>
+      <!--Formulario-->
+      <form>
+      <div class="formulario">
+
+        <!--Grupo: Titulo-->
+        <div class="form__group" id="titleArticleM">
+          <label for="titleAM" class="form__label">Titulo del Articulo</label>
+          <div class="form__group--input">
+            <input type="text" name="titleAM" id="titleAM" class="form__input"/>
+            <i class="formulario__validacion--estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input--error">
+            *Por favor llene este campo con formato valido
+          </p>
+        </div>
+
+          <!--Grupo: Nombre Revista-->
+        <div class="form__group" id="nameMagazine">
+          <label for="nameM" class="form__label">Nombre de la Revista</label>
+          <div class="form__group--input">
+            <input type="text" name="nameM" id="nameM" class="form__input"/>
+            <i class="formulario__validacion--estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input--error">
+            *Por favor llene este campo con formato valido
+          </p>
+        </div>
+
+        <!-- Grupo: Tipo Revista -->
+        <div class="form__group" id="typeMagazine">
+          <label for="typeM" class="form__label">Tipo de Revista</label>
+          <div class="form__group--input">
+            <select class="form__input" name="typeM" id="typeM">
+              <option value="AtypeM">Seleccione Tipo de Revista</option>
+              <option value="BtypeM">Arbitrada</option>
+              <option value="CtypeM">No arbitrada</option>
+            </select>
+            <i class="formulario__validacion--estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input--error">
+            *Por favor llene este campo con formato valido
+          </p>
+        </div>
+
+        <!-- Grupo: Indice Revista -->
+        <div class="form__group" id="indexMagazine">
+          <label for="indexM" class="form__label">Indice de la Revista</label>
+          <div class="form__group--input">
+            <select class="form__input" name="indexM" id="indexM">
+              <option value="AindexM">Seleecione Indice de la Revista</option>
+              <option value="BindexM">JCR</option>
+              <option value="CindexM">CONACYT</option>
+              <option value="DindexM">Otro</option>
+            </select>
+            <i class="formulario__validacion--estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input--error">
+            *Por favor llene este campo con formato valido
+          </p>
+        </div>
+
+        <!-- Grupo: ISSN Revista -->
+        <div class="form__group" id="ISSNMagazine">
+          <label for="issnM" class="form__label">ISSN</label>
+          <div class="form__group--input">
+            <input type="text" name="issnM" id="issnM" class="form__input">
+            <i class="formulario__validacion--estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input--error">
+            *Por favor llene este campo con formato valido
+          </p>
+        </div>
+
+        <!-- Grupo: DOI Revista -->
+        <div class="form__group" id="DOIMagazine">
+          <label for="doiM" class="form__label">DOI</label>
+          <div class="form__group--input">
+            <input type="text" name="doiM" id="doiM" class="form__input">
+            <i class="formulario__validacion--estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input--error">
+            *Por favor llene este campo con formato valido
+          </p>
+        </div>
+
+        <!-- Grupo: URL Revista -->
+        <div class="form__group" id="URLMagazine">
+          <label for="urlM" class="form__label">URL</label>
+          <div class="form__group--input">
+            <input type="url" name="urlM" id="urlM" class="form__input">
+            <i class="formulario__validacion--estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input--error">
+            *Por favor llene este campo con formato valido
+          </p>
+        </div>
+
+        <!-- Grupo: Autor-->
+        <div class="form__group" id="autorArticleMagazine">
+          <label for="autorAM" class="form__label">Autor</label>
+          <div class="form__group--input">
+            <select class="form__input" name="autorAM" id="autorAM">
+              <option value="AautorAM">Seleccione Opcion de Autor</option>
+              <option value="BautorAM">Autor Principal</option>
+              <option value="CautorAM">Coautor</option>
+            </select>
+            <i class="formulario__validacion--estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input--error">
+            *Por favor llene este campo con formato valido
+          </p>
+        </div>
+
+        <!-- Grupo: Tema Tesis-->
+        <div class="form__group" id="tesisMagazine">
+          <label for="tesisAM" class="form__label">¿Está relacionado con su tesis</label>
+          <div class="form__group--input">
+            <select class="form__input" name="tesisAM" id="tesisAM">
+              <option value="AtesisAM">Seleccione Opcion</option>
+              <option value="BtesisAM">Autor Principal</option>
+              <option value="CtesisAM">Coautor</option>
+            </select>
+            <i class="formulario__validacion--estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input--error">
+            *Por favor llene este campo con formato valido
+          </p>
+        </div>
+
+      </div>
+      </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <img
+        src="../img/logo_ipn.jpg"
+        alt="logo IPN"
+        class="footer__img--ipn"
+      />
+      <div class="footer__text">
+        <p class="footer__text--title">
+          Instituto Politécnico Nacional <br />
+          Centro de Investigación en Ciencia Aplicada y Tecnología Avanzada
+          Unidad Legaria
+        </p>
+        <p class="footer__text--direction">
+          Calzada Legaria 694, Colonia Irrigación, Alcaldía Miguel Hidalgo,
+          <br />
+          C.P 11500 Ciudad de México, CDMX Conmutador: 55 57 29 60 00.
+        </p>
+      </div>
+      <img
+        src="../img/Logo_CICATA.png"
+        alt="Logo CICATA"
+        class="footer__img--cigata"
+      />
+    </footer>
+  </body>
+</html>
